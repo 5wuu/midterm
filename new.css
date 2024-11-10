@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(193, 212, 229);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #a8b5c2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #e8e9e9;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #c2c3c4;
+    color: #f5f5f5;
+}
+
+main {
+    width: 70%;
+    margin: 20px auto;
+    flex-direction: column
+}
+
+.card {
+    background-color: white;
+    margin: 20px 0;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url(card_img.jpg);
+    background-size: cover;
+}
+
+.full-width {
+    width: 100%;
+}
+
+img {
+    width: 600px;  
+    height: 350px;
+  }
+  
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.progress-item {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(15, 61, 99);
+    border-radius: 8px;
+    animation: load 2s ease forwards;
+    }
+    
+    .python::before {
+    width: 70%;
+    }
+    
+    .java::before {
+    width: 75%;
+    }
+    
+    .html-css::before {
+    width: 60%;
+    }
+    
+    .cpp::before {
+    width: 65%;
+    }
+
+footer {
+    background-color: #a8b5c2;
+    color: #8c99a4;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
